@@ -76,6 +76,19 @@
         .service-card:hover { transform: translateY(-10px); }
         .service-tag { color: var(--dorado-mate); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px; }
 
+        /* Estilos para Testimonios */
+        .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 20px; }
+        .testimonial-card {
+            background: var(--blanco);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+            border-left: 4px solid var(--verde-profundo);
+        }
+        .testimonial-text { font-style: italic; font-size: 1rem; margin-bottom: 20px; color: var(--gris-carbon); }
+        .testimonial-author { font-weight: 600; color: var(--verde-profundo); font-size: 0.9rem; }
+        .testimonial-position { font-size: 0.8rem; color: var(--dorado-mate); text-transform: uppercase; }
+
         .btn-small {
             margin-top: auto;
             color: var(--verde-profundo);
@@ -112,7 +125,7 @@
             <p>
                 Como Ingeniera Empresarial, estructuro la <strong>gestión administrativa y financiera</strong> de tu negocio de forma virtual. Mi enfoque es transformar procesos críticos como la facturación, cobranza y tesorería en un sistema eficiente que garantice que tus finanzas reflejen la salud real de tu empresa.
             </p>
-            <p><strong>Libérate de la carga operativa administrativa para enfocarle en crecer, mientras yo mantengo el flujo de caja y el orden documentario bajo control.</strong></p>
+            <p><strong>Libérate de la carga operativa administrativa para enfocarte en crecer, mientras yo mantengo el flujo de caja y el orden documentario bajo control.</strong></p>
             <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20me%20gustaría%20agendar%20una%20consultoría." class="btn-cta" target="_blank">AGENDA TU CONSULTORÍA</a>
         </div>
         <div class="hero-image">
@@ -155,6 +168,31 @@
             <h3>Orden Documentario y SUNAT</h3>
             <p>Clasifico toda tu documentación administrativa en carpetas virtuales organizadas y listas para cualquier revisión. Mantengo tu papelería impecable, dándote el respaldo y la tranquilidad legal que necesitas.</p>
             <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20necesito%20ordenar%20mi%20documentación%20virtual%20y%20asegurar%20mi%20cumplimiento%20SUNAT." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
+        </div>
+
+    </div>
+</section>
+
+<section id="testimonios" style="background-color: #EAE5DF;">
+    <h2 style="text-align: center; display: block;">Lo que dicen mis clientes</h2>
+    <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+            <p class="testimonial-text">"Gracias al orden documentario y la gestión de tesorería de Marilú, ahora tengo claridad absoluta sobre mis ingresos en diferentes monedas. Es una paz mental increíble."</p>
+            <p class="testimonial-author">Cliente Satisfecho</p>
+            <p class="testimonial-position">Director de Agencia</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">"El control financiero que implementó en nuestros proyectos nos permitió detectar fugas de dinero que no habíamos visto. Su enfoque técnico es impecable."</p>
+            <p class="testimonial-author">Empresario Independiente</p>
+            <p class="testimonial-position">Sector Construcción</p>
+        </div>
+
+        <div class="testimonial-card">
+            <p class="testimonial-text">"Pasamos de un caos en facturación a un sistema virtual donde todo fluye. Marilú se encarga de que SUNAT no sea una preocupación para nosotros."</p>
+            <p class="testimonial-author">Consultora Senior</p>
+            <p class="testimonial-position">Servicios Profesionales</p>
         </div>
 
     </div>
