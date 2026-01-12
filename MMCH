@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marilú Martínez | Ingeniera Empresarial - Consultoría Estratégica</title>
+    <meta name="description" content="Consultoría en administración, facturación y finanzas para PYMES y personas naturales. Gestión multimoneda USD/PEN/MXN/COP.">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --verde-profundo: #2D4739;
+            --crema-base: #F5F2ED;
+            --dorado-mate: #C5A059;
+            --gris-carbon: #333333;
+            --blanco: #FFFFFF;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--crema-base);
+            color: var(--gris-carbon);
+            line-height: 1.7;
+            scroll-behavior: smooth;
+        }
+
+        header, section, footer {
+            padding: 80px 10%;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--verde-profundo);
+            margin-top: 0;
+        }
+
+        h1 { font-size: 3rem; line-height: 1.1; margin-bottom: 20px; }
+        h2 { font-size: 2.2rem; border-bottom: 2px solid var(--dorado-mate); display: inline-block; margin-bottom: 40px; }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            min-height: 80vh;
+        }
+
+        .hero-text { flex: 1.2; }
+        .hero-image { flex: 0.8; }
+
+        .hero img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            border-left: 15px solid var(--verde-profundo);
+            border-bottom: 15px solid var(--dorado-mate);
+            display: block;
+            object-fit: cover;
+        }
+
+        .btn-cta {
+            display: inline-block;
+            background-color: var(--verde-profundo);
+            color: var(--blanco);
+            padding: 18px 40px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 30px;
+            transition: 0.3s ease;
+            box-shadow: 0 4px 15px rgba(45, 71, 57, 0.2);
+        }
+
+        .btn-cta:hover {
+            background-color: var(--dorado-mate);
+            transform: translateY(-3px);
+        }
+
+        .enfoque {
+            background-color: var(--blanco);
+            text-align: center;
+            padding: 60px 10%;
+        }
+
+        .enfoque-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .enfoque-item h4 { 
+            color: var(--dorado-mate); 
+            font-size: 1.4rem; 
+            font-family: 'Playfair Display', serif;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background-color: var(--blanco);
+            padding: 40px;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--dorado-mate);
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-card:hover { transform: translateY(-10px); }
+        
+        .service-tag {
+            color: var(--dorado-mate);
+            font-weight: 600;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .btn-small {
+            margin-top: auto;
+            color: var(--verde-profundo);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 1px solid var(--dorado-mate);
+            align-self: flex-start;
+            padding-top: 15px;
+        }
+
+        ul { padding-left: 20px; font-size: 0.95rem; }
+        li { margin-bottom: 10px; }
+
+        footer {
+            background-color: var(--verde-profundo);
+            color: var(--crema-base);
+            text-align: center;
+            padding: 60px 10%;
+        }
+
+        footer a { color: var(--dorado-mate); text-decoration: none; margin: 0 15px; font-weight: 600; }
+
+        @media (max-width: 992px) {
+            .hero { flex-direction: column; text-align: center; }
+            .hero-image { order: -1; }
+            h1 { font-size: 2.4rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero">
+        <div class="hero-text">
+            <p style="color: var(--dorado-mate); font-weight: 600; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 10px;">Ingeniera Empresarial Titulada</p>
+            <h1>Orden operativo y financiero para tu tranquilidad.</h1>
+            <p>Especialista en estructurar procesos de facturación, gestión administrativa y tesorería multimoneda. Ayudo a PYMES y profesionales a escalar sus negocios con estructura técnica.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20me%20gustaría%20solicitar%20una%20consultoría%20integral." class="btn-cta" target="_blank">AGENDA UNA CONSULTORÍA</a>
+        </div>
+        <div class="hero-image">
+            <img src="marilu-martinez.jpeg" alt="Ing. Marilú Martínez">
+        </div>
+    </div>
+</header>
+
+<section class="enfoque">
+    <h2>Especializada en tu crecimiento</h2>
+    <div class="enfoque-grid">
+        <div class="enfoque-item">
+            <h4>Personas Naturales</h4>
+            <p>Ordenamos tus ingresos y regularizamos tu gestión administrativa.</p>
+        </div>
+        <div class="enfoque-item">
+            <h4>Pequeñas Empresas</h4>
+            <p>Estructuramos tus flujos de facturación y procesos para delegar con seguridad.</p>
+        </div>
+        <div class="enfoque-item">
+            <h4>Medianas Empresas</h4>
+            <p>Control financiero de proyectos y gestión de tesorería regional avanzada.</p>
+        </div>
+    </div>
+</section>
+
+<section id="servicios">
+    <h2>Servicios de Consultoría</h2>
+    <div class="services-grid">
+        
+        <div class="service-card">
+            <span class="service-tag">Productividad Operativa</span>
+            <h3>Ingeniería de Facturación y Cobranza</h3>
+            <p>Diseño procesos eficientes para asegurar que cada venta se facture sin errores y se cobre a tiempo.</p>
+            <ul>
+                <li>Flujos para modelos B2B, B2C y B2B2C.</li>
+                <li>Manuales de procesos y estandarización.</li>
+                <li>Optimización del ciclo de recaudo.</li>
+            </ul>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20me%20interesa%20mejorar%20mi%20proceso%20de%20facturación." class="btn-small">Consultar servicio →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="service-tag">Control Global</span>
+            <h3>Tesorería Multimoneda (USD/PEN/MXN/COP)</h3>
+            <p>Gestión técnica de tus flujos internacionales y conciliación de plataformas de pago.</p>
+            <ul>
+                <li>Conciliación bancaria en 4 países.</li>
+                <li>Reconciliación de pasarelas (Stripe, PayPal, etc).</li>
+                <li>Gestión administrativa de nóminas regionales.</li>
+            </ul>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20necesito%20ayuda%20con%20mi%20tesorería%20multimoneda." class="btn-small">Consultar servicio →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="service-tag">Rentabilidad</span>
+            <h3>Control y Monitoreo de Proyectos</h3>
+            <p>Supervisión financiera para asegurar que tus proyectos cumplan el presupuesto.</p>
+            <ul>
+                <li>Reportes de ejecución presupuestal técnica.</li>
+                <li>Seguimiento de KPIs operativos (B2B/B2G).</li>
+                <li>Análisis de desviaciones y toma de decisiones.</li>
+            </ul>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20me%20interesa%20el%20monitoreo%20financiero%20de%20mis%20proyectos." class="btn-small">Consultar servicio →</a>
+        </div>
+
+        <div class="service-card">
+            <span class="service-tag">Orden Administrativo</span>
+            <h3>Estructura y Cumplimiento</h3>
+            <p>Validación de datos y orden documentario para una gestión impecable ante SUNAT.</p>
+            <ul>
+                <li>Auditoría y validación de calidad de datos.</li>
+                <li>Coordinación estratégica con contadores.</li>
+                <li>Soporte administrativo y de RRHH mensual.</li>
+            </ul>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20busco%20apoyo%20en%20el%20cumplimiento%20y%20orden%20administrativo." class="btn-small">Consultar servicio →</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h2 style="color: var(--crema-base); border-bottom: none; margin-bottom: 20px;">¿Empezamos hoy?</h2>
+    <div style="margin-bottom: 40px;">
+        <a href="mailto:marilumartinezch@gmail.com">Email</a>
+        <a href="https://linkedin.com/in/marilumartinezch/" target="_blank">LinkedIn</a>
+        <a href="https://wa.me/51920109210" target="_blank">WhatsApp</a>
+    </div>
+    <p style="font-size: 0.85rem; opacity: 0.8;">© 2026 Ing. Marilú Martínez | Finanzas & Procesos</p>
+</footer>
+
+</body>
+</html>
