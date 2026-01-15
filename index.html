@@ -60,35 +60,50 @@
 
         .btn-cta:hover { background-color: var(--dorado-mate); transform: translateY(-3px); }
 
-        .services-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 25px; 
+        /* Estructura de Columnas por Segmento */
+        .services-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .category-title {
+            text-align: center;
+            background: var(--verde-profundo);
+            color: var(--crema-base);
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+            margin-bottom: 0;
+            font-size: 1.4rem;
+        }
+
+        .service-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .service-card {
             background-color: var(--blanco);
-            padding: 40px;
-            border-radius: 8px;
-            border-top: 6px solid var(--dorado-mate);
-            box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+            padding: 30px;
+            border-radius: 0 0 8px 8px;
+            border-bottom: 4px solid var(--dorado-mate);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
             transition: 0.3s;
-            display: flex;
-            flex-direction: column;
         }
 
-        .service-card:hover { transform: translateY(-10px); }
-        .service-tag { color: var(--dorado-mate); font-weight: 600; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 15px; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-tag { color: var(--dorado-mate); font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; display: block; margin-bottom: 10px; }
 
         .btn-small {
-            margin-top: auto;
+            display: inline-block;
+            margin-top: 15px;
             color: var(--verde-profundo);
             text-decoration: none;
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             border-bottom: 1px solid var(--dorado-mate);
-            align-self: flex-start;
-            padding-top: 15px;
             transition: 0.3s;
         }
         
@@ -101,7 +116,7 @@
 
         @media (max-width: 992px) {
             .hero { flex-direction: column; text-align: center; padding: 40px 5%; }
-            .hero-image { order: -1; }
+            .services-container { grid-template-columns: 1fr; }
             h1 { font-size: 2.2rem; }
         }
     </style>
@@ -113,11 +128,8 @@
         <div class="hero-text">
             <p style="color: var(--dorado-mate); font-weight: 600; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 15px;">Ing. Marilú Martínez | Gestión & Finanzas</p>
             <h1>Recupera tu tiempo y tu paz mental. Yo me encargo del orden.</h1>
-            <p>
-                Como Ingeniera Empresarial, estructuro la <strong>gestión administrativa y financiera</strong> de tu negocio y tus finanzas personales. Mi enfoque es transformar procesos críticos en sistemas eficientes que garanticen que tu dinero trabaje para ti.
-            </p>
-            <p><strong>Libérate de la carga operativa para enfocarte en crecer, mientras yo mantengo el flujo de caja y tu tranquilidad bajo control.</strong></p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20me%20gustaría%20agendar%20una%20consultoría." class="btn-cta" target="_blank">AGENDA TU CONSULTORÍA</a>
+            <p>Como Ingeniera Empresarial, estructuro la gestión de tu negocio y tus finanzas personales con sistemas eficientes diseñados para que tu dinero trabaje para ti.</p>
+            <a href="https://wa.me/51920109210" class="btn-cta" target="_blank">AGENDA TU CONSULTORÍA</a>
         </div>
         <div class="hero-image">
             <img src="marilu-martinez.jpeg" alt="Ing. Marilú Martínez">
@@ -125,60 +137,54 @@
     </div>
 </header>
 
-<div class="motto">
-    "Tu paz mental no tiene precio"
-</div>
+<div class="motto">"Tu paz mental no tiene precio"</div>
 
 <section id="servicios">
-    <h2 style="text-align: center; display: block;">Mis servicios profesionales</h2>
-    <div class="services-grid">
+    <h2 style="text-align: center; display: block; margin-bottom: 60px;">Soluciones a tu medida</h2>
+    
+    <div class="services-container">
         
-        <div class="service-card">
-            <span class="service-tag">Libertad Financiera</span>
-            <h3>Finanzas Personales</h3>
-            <p>Asesoro a personas naturales para organizar su dinero, crear planes de ahorro efectivos y eliminar deudas. Te ayudo a tomar el control de tus finanzas para que logres tus metas personales con paz mental.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20me%20gustaría%20una%20asesoría%20de%20finanzas%20personales." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
+        <div class="service-column">
+            <h3 class="category-title">Personas Naturales</h3>
+            <div class="service-card">
+                <span class="service-tag">Libertad Financiera</span>
+                <h3>Asesoría en Finanzas Personales</h3>
+                <p>Organiza tu dinero, crea planes de ahorro efectivos y elimina deudas para lograr tus metas personales con tranquilidad.</p>
+                <a href="https://wa.me/51920109210?text=Hola,%20busco%20asesoría%20en%20finanzas%20personales" class="btn-small" target="_blank">Consultar →</a>
+            </div>
+            <div class="service-card">
+                <span class="service-tag">Orden Personal</span>
+                <h3>Gestión de Trámites y Archivo</h3>
+                <p>Digitalización y orden de documentos personales importantes para que siempre tengas todo a la mano y bajo control.</p>
+                <a href="https://wa.me/51920109210?text=Hola,%20necesito%20ordenar%20mis%20documentos%20personales" class="btn-small" target="_blank">Consultar →</a>
+            </div>
         </div>
 
-        <div class="service-card">
-            <span class="service-tag">Eficiencia en Ingresos</span>
-            <h3>Facturación y Cobranzas</h3>
-            <p>Organizo todo tu proceso de facturación para evitar errores con los impuestos. Olvídate de perseguir pagos; diseño el sistema para que tú solo veas los ingresos llegar a tiempo.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20ayúdame%20a%20ordenar%20mis%20facturas%20y%20cobros." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
-        </div>
-
-        <div class="service-card">
-            <span class="service-tag">Flujo de Caja</span>
-            <h3>Tesorería Multimoneda</h3>
-            <p>Gestiono tus cuentas y pasarelas de pago en USD, MXN, PEN y COP. Sabrás exactamente cuánto dinero tienes disponible y en qué se está gastando, sin sorpresas al cierre de mes.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20necesito%20controlar%20mis%20cuentas%20en%20USD,%20MXN,%20PEN%20o%20COP." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
-        </div>
-
-        <div class="service-card">
-            <span class="service-tag">Rentabilidad Directa</span>
-            <h3>Control de Proyectos</h3>
-            <p>Cuido que tus proyectos no gasten más de lo debido. Reviso cada costo para que tus márgenes de ganancia sean reales y sepas exactamente dónde ajustar para ganar más.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20ayúdame%20a%20controlar%20los%20gastos%20de%20mis%20proyectos." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
-        </div>
-
-        <div class="service-card">
-            <span class="service-tag">Archivo Digital</span>
-            <h3>Orden Documentario</h3>
-            <p>Clasifico toda tu documentación administrativa en carpetas virtuales organizadas. Mantengo tu papelería impecable, dándote el respaldo legal y la tranquilidad ante la SUNAT que necesitas.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20necesito%20ordenar%20mi%20documentación%20virtual%20y%20asegurar%20mi%20cumplimiento%20SUNAT." class="btn-small" target="_blank">Consultar por WhatsApp →</a>
+        <div class="service-column">
+            <h3 class="category-title">PYMES y Negocios</h3>
+            <div class="service-card">
+                <span class="service-tag">Eficiencia</span>
+                <h3>Facturación y Tesorería</h3>
+                <p>Gestión multimoneda (USD, MXN, PEN) y control de flujo de caja para que tu negocio nunca se detenga[cite: 37].</p>
+                <a href="https://wa.me/51920109210?text=Hola,%20necesito%20apoyo%20en%20facturación%20y%20tesorería" class="btn-small" target="_blank">Consultar →</a>
+            </div>
+            <div class="service-card">
+                <span class="service-tag">Rentabilidad</span>
+                <h3>Control de Costos y SUNAT</h3>
+                <p>Monitoreo de gastos por proyecto y orden documentario para asegurar tu cumplimiento tributario sin estrés[cite: 31, 50].</p>
+                <a href="https://wa.me/51920109210?text=Hola,%20busco%20controlar%20costos%20de%20mis%20proyectos" class="btn-small" target="_blank">Consultar →</a>
+            </div>
         </div>
 
     </div>
 </section>
 
 <footer>
-    <h3 style="color: var(--crema-base); margin-bottom: 20px;">¿Listo para ordenar tu administración?</h3>
     <div style="margin-bottom: 30px;">
         <a href="mailto:marilumartinezch@gmail.com">Email</a>
         <a href="https://linkedin.com/in/marilumartinezch/" target="_blank">LinkedIn</a>
-        <a href="https://wa.me/51920109210" target="_blank">WhatsApp</a>
     </div>
-    <p style="font-size: 0.85rem; opacity: 0.7;">© 2026 Ing. Marilú Martínez | Gestión & Finanzas</p>
+    <p style="font-size: 0.85rem; opacity: 0.7;">© 2026 Ing. Marilú Martínez | Finanzas claras, futuro seguro</p>
 </footer>
 
 </body>
