@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing. Marilú Martínez | Gestión & Finanzas</title>
+    <title>Ing. Marilú Martínez | Estrategia Administrativa & Financiera</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -19,23 +19,23 @@
         header, section { padding: 60px 10%; }
         h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--verde-profundo); }
         
-        /* Hero Section */
-        .hero { display: flex; align-items: center; gap: 50px; min-height: 75vh; }
+        .hero { display: flex; align-items: center; gap: 50px; min-height: 80vh; }
         .hero-text { flex: 1.2; }
         .hero-image { flex: 0.8; text-align: right; }
         .hero img { width: 100%; max-width: 380px; border-radius: 20px; border-bottom: 12px solid var(--dorado-mate); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
-        .hero h1 { font-size: 3.2rem; line-height: 1.1; margin: 20px 0; }
         
-        .btn-main { display: inline-block; background: var(--verde-profundo); color: white; padding: 18px 40px; text-decoration: none; border-radius: 5px; font-weight: 600; transition: 0.3s; box-shadow: 0 4px 15px rgba(45, 71, 57, 0.2); }
+        .hero h1 { font-size: 3.5rem; line-height: 1.1; margin: 20px 0; }
+        .expertise-tag { text-transform: uppercase; letter-spacing: 4px; color: var(--dorado-mate); font-weight: 700; font-size: 0.9rem; }
+        
+        .btn-main { display: inline-block; background: var(--verde-profundo); color: white; padding: 20px 45px; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 30px; transition: 0.3s; box-shadow: 0 4px 15px rgba(45, 71, 57, 0.2); text-transform: uppercase; letter-spacing: 1px; }
         .btn-main:hover { background: var(--dorado-mate); transform: translateY(-3px); }
 
-        /* Estilo de Tarjetas */
         .section-title { text-align: center; margin-bottom: 50px; }
         .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 25px; }
         
         .card { 
             background: var(--blanco); 
-            padding: 40px 25px; 
+            padding: 45px 30px; 
             border-radius: 15px; 
             text-align: center; 
             transition: 0.4s; 
@@ -45,10 +45,10 @@
             align-items: center;
         }
         
-        .card:hover { transform: translateY(-10px); box-shadow: 0 15px 35px rgba(45, 71, 57, 0.08); border-color: var(--dorado-mate); }
-        .card i { font-size: 2.2rem; color: var(--dorado-mate); margin-bottom: 20px; }
-        .card h3 { font-size: 1.2rem; margin-bottom: 15px; min-height: 3rem; display: flex; align-items: center; }
-        .card p { font-size: 0.9rem; color: var(--texto-gris); line-height: 1.6; margin-bottom: 25px; flex-grow: 1; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(45, 71, 57, 0.08); border-color: var(--dorado-mate); }
+        .card i { font-size: 2.2rem; color: var(--dorado-mate); margin-bottom: 25px; }
+        .card h3 { font-size: 1.25rem; margin-bottom: 18px; min-height: 3rem; display: flex; align-items: center; }
+        .card p { font-size: 0.95rem; color: var(--texto-gris); line-height: 1.6; margin-bottom: 25px; flex-grow: 1; }
         
         .whatsapp-link { 
             color: var(--verde-profundo); 
@@ -65,21 +65,21 @@
         }
         .whatsapp-link:hover { color: var(--dorado-mate); }
 
-        .motto { background: var(--verde-profundo); color: var(--crema-base); text-align: center; padding: 30px; font-style: italic; font-size: 1.1rem; }
+        .motto { background: var(--verde-profundo); color: var(--crema-base); text-align: center; padding: 35px; font-style: italic; font-size: 1.2rem; letter-spacing: 1px; }
 
-        /* Footer */
         footer { background: #1e3026; color: white; padding: 60px 10% 30px; }
         .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; }
-        .footer-logo h3 { color: white; margin-bottom: 10px; }
-        .footer-logo p { font-size: 0.9rem; opacity: 0.8; max-width: 350px; }
-        .footer-col h4 { color: var(--dorado-mate); text-transform: uppercase; font-size: 0.8rem; letter-spacing: 2px; margin-bottom: 20px; }
-        .footer-col a { color: rgba(255,255,255,0.8); text-decoration: none; display: block; margin-bottom: 12px; font-size: 0.9rem; }
+        .footer-logo h3 { color: white; margin-bottom: 10px; font-size: 1.8rem; }
+        .footer-logo p { font-size: 0.95rem; opacity: 0.8; max-width: 400px; line-height: 1.6; }
+        .footer-col h4 { color: var(--dorado-mate); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; margin-bottom: 20px; }
+        .footer-col a { color: rgba(255,255,255,0.8); text-decoration: none; display: block; margin-bottom: 15px; font-size: 0.95rem; }
         .footer-col a:hover { color: var(--dorado-mate); }
-        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 20px; text-align: center; font-size: 0.8rem; opacity: 0.5; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 40px; padding-top: 25px; text-align: center; font-size: 0.85rem; opacity: 0.5; }
 
         @media (max-width: 992px) { 
             .hero { flex-direction: column; text-align: center; } 
             .hero-image { text-align: center; }
+            .hero h1 { font-size: 2.8rem; }
             .footer-grid { grid-template-columns: 1fr; text-align: center; }
         }
     </style>
@@ -88,71 +88,71 @@
 
 <header class="hero">
     <div class="hero-text">
-        <p style="text-transform: uppercase; letter-spacing: 4px; color: var(--dorado-mate); font-weight: 600;">Ing. Marilú Martínez</p>
-        <h1>Sistemas financieros para decisiones de alto impacto.</h1>
-        <p>Como <strong>Ingeniera Empresarial</strong>, transformo el caos administrativo en procesos de alta rentabilidad. Diseño la estructura que tu negocio necesita para que cada sol y cada minuto trabajen a tu favor.</p>
-        <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20me%20interesa%20optimizar%20mi%20gestión%20administrativa." class="btn-main">AGENDAR CONSULTORÍA ESTRATÉGICA</a>
+        <p class="expertise-tag">Ingeniería Empresarial & Estrategia Financiera</p>
+        <h1>Arquitectura financiera para decisiones de alto impacto.</h1>
+        <p style="font-size: 1.1rem; line-height: 1.8; color: #444;">Como <strong>Ingeniera Empresarial</strong>, mi expertise radica en transformar el caos operativo en sistemas de alta rentabilidad. Diseño la estructura administrativa que tu negocio necesita para garantizar que cada recurso, cada sol y cada minuto trabajen con precisión a favor de tu crecimiento.</p>
+        <a href="https://wa.me/51920109210?text=Hola%20Ing.%20Marilú,%20deseo%20optimizar%20la%20estructura%20financiera%20de%20mi%20negocio." class="btn-main">Agendar Consultoría Estratégica</a>
     </div>
     <div class="hero-image">
         <img src="marilu-martinez.jpeg" alt="Ing. Marilú Martínez">
     </div>
 </header>
 
-<div class="motto">"Tu paz mental no tiene precio"</div>
+<div class="motto">"Tu paz mental es el resultado de una gestión impecable"</div>
 
 <section id="servicios-empresa">
     <div class="section-title">
-        <h2>Servicios para Empresas</h2>
-        <p>Especialidades diseñadas para una administración impecable, rentable y escalable.</p>
+        <h2 style="font-size: 2.5rem;">Gestión Corporativa Especializada</h2>
+        <p>Soluciones de ingeniería aplicadas al control financiero y administrativo.</p>
     </div>
     
     <div class="services-grid">
         <div class="card">
             <i class="fas fa-file-invoice-dollar"></i>
-            <h3>Procesos de Facturación</h3>
-            <p>Implementación de flujos de cobranza y facturación B2C, B2B y B2B2C para asegurar el ingreso de flujo de caja sin errores.</p>
-            <a href="https://wa.me/51920109210?text=Hola,%20quisiera%20información%20sobre%20procesos%20de%20facturación." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <h3>Ingeniería de Facturación</h3>
+            <p>Diseño e implementación de flujos de cobranza y facturación B2C, B2B y B2B2C, asegurando la integridad del flujo de caja.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20necesito%20mejorar%20mis%20procesos%20de%20facturación." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Servicio →</a>
         </div>
 
         <div class="card">
-            <i class="fas fa-coins"></i>
+            <i class="fas fa-university"></i>
             <h3>Tesorería Multimoneda</h3>
-            <p>Conciliaciones bancarias y gestión eficiente de cuentas en USD, MXN y PEN para un control de liquidez en tiempo real.</p>
-            <a href="https://wa.me/51920109210?text=Hola,%20necesito%20apoyo%20con%20tesorería%20multimoneda." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <p>Gestión estratégica y conciliación de activos en USD, MXN y PEN. Control de liquidez y pasarelas de pago internacionales.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20busco%20apoyo%20en%20gestión%20de%20tesorería%20multimoneda." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Servicio →</a>
         </div>
 
         <div class="card">
-            <i class="fas fa-exchange-alt"></i>
-            <h3>Administración Documentaria</h3>
-            <p>Elaboración y organización del soporte administrativo contable para declaraciones fiscales impecables y libres de contingencias.</p>
-            <a href="https://wa.me/51920109210?text=Hola,%20me%20interesa%20el%20servicio%20de%20administración%20documentaria." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <i class="fas fa-shield-alt"></i>
+            <h3>Gestión Administrativa Contable</h3>
+            <p>Soporte técnico y estructuración documentaria para garantizar declaraciones fiscales precisas y blindaje ante contingencias.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20me%20interesa%20el%20servicio%20de%20gestión%20administrativa%20contable." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Servicio →</a>
         </div>
 
         <div class="card">
-            <i class="fas fa-chart-pie"></i>
-            <h3>B2B: Control de Proyectos</h3>
-            <p>Monitoreo financiero proactivo y reportes de rentabilidad estratégica para proyectos B2G y del sector privado.</p>
-            <a href="https://wa.me/51920109210?text=Hola,%20busco%20control%20financiero%20B2B%20para%20mis%20proyectos." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <i class="fas fa-chart-line"></i>
+            <h3>Control de Proyectos</h3>
+            <p><strong>B2B:</strong> Monitoreo financiero proactivo y reportes de rentabilidad estratégica para proyectos B2G y del sector privado.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20necesito%20control%20financiero%20B2B%20específico%20para%20mis%20proyectos." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Servicio →</a>
         </div>
     </div>
 </section>
 
 <section id="servicios-personas" style="background: white;">
     <div class="section-title">
-        <h2>Tus Finanzas Personales</h2>
+        <h2 style="font-size: 2.2rem;">Asesoría para Personas Naturales</h2>
     </div>
     <div class="services-grid" style="max-width: 900px; margin: 0 auto;">
         <div class="card">
-            <i class="fas fa-user-check"></i>
-            <h3>Impuestos Personales</h3>
-            <p>Asesoría cercana sobre tus obligaciones fiscales para que cumplas con la SUNAT con absoluta seguridad y orden.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20necesito%20ayuda%20con%20mis%20impuestos%20personales." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <i class="fas fa-user-tie"></i>
+            <h3>Estrategia Fiscal Personal</h3>
+            <p>Cumplimiento tributario y orden contable ante la SUNAT con una visión clara de tus obligaciones y beneficios.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20necesito%20ayuda%20con%20mis%20impuestos%20personales." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Asesoría →</a>
         </div>
         <div class="card">
-            <i class="fas fa-piggy-bank"></i>
-            <h3>Plan de Ahorro y Gastos</h3>
-            <p>Diseño de presupuestos inteligentes que organizan tu día a día para alcanzar tus objetivos financieros sin estrés.</p>
-            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20quisiera%20armar%20un%20plan%20de%20ahorro%20y%20gastos." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar →</a>
+            <i class="fas fa-balance-scale"></i>
+            <h3>Presupuesto y Ahorro</h3>
+            <p>Optimización de finanzas personales mediante presupuestos inteligentes diseñados para la libertad financiera.</p>
+            <a href="https://wa.me/51920109210?text=Hola%20Marilú,%20deseo%20organizar%20mi%20presupuesto%20personal." class="whatsapp-link"><i class="fab fa-whatsapp"></i> Consultar Asesoría →</a>
         </div>
     </div>
 </section>
@@ -161,21 +161,21 @@
     <div class="footer-grid">
         <div class="footer-logo">
             <h3>Ing. Marilú Martínez</h3>
-            <p>Ingeniera Empresarial (USIL) con más de 5 años optimizando la estructura financiera y administrativa de negocios en Latam.</p>
+            <p>Bachiller en Ingeniería Empresarial (USIL) con más de 5 años de trayectoria optimizando la salud financiera de organizaciones en Latinoamérica.</p>
         </div>
         <div class="footer-col">
-            <h4>Contacto Directo</h4>
+            <h4>Canales de Contacto</h4>
             <a href="mailto:marilumartinezch@gmail.com"><i class="far fa-envelope"></i> marilumartinezch@gmail.com</a>
             <a href="https://wa.me/51920109210"><i class="fab fa-whatsapp"></i> +51 920 109 210</a>
         </div>
         <div class="footer-col">
-            <h4>Conexión Profesional</h4>
-            <a href="https://linkedin.com/in/marilumartinezch/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <p style="font-size: 0.8rem; margin-top: 15px;">Lima, Perú</p>
+            <h4>Ecosistema Profesional</h4>
+            <a href="https://linkedin.com/in/marilumartinezch/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn Perfil</a>
+            <p style="font-size: 0.85rem; margin-top: 15px; color: var(--dorado-mate);"><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
         </div>
     </div>
     <div class="footer-bottom">
-        © 2026 Marilú Martínez | Finanzas con propósito, futuro con orden.
+        © 2026 Marilú Martínez | Finanzas estratégicas con visión de ingeniería.
     </div>
 </footer>
 
